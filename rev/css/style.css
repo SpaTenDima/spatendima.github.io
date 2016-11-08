@@ -1,0 +1,99 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.z6{
+background-color: pink;
+}
+.z6 h1{
+color: blue;
+}
+.z6 h3{
+color: red;
+}
+.z6 a{
+color: green;
+}
+.z7{
+background-image: url(../img/1.png);
+width: 50px;
+height: 50px;
+box-shadow: inset 0 0 1em black;
+}
+.z9{
+background-color: black;
+height: auto;
+
+}
+.z9 li{
+display: inline-block;
+border-right: 1px solid white;
+padding: 5px;
+}
+.z9_li1{
+color: red;
+}
+.z9_li2{
+color: blue;
+}
+.z9_li3{
+color: yellow;
+}
+	
+/*Для того чтоб избавиьтся от отступов я воспользовался 
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+Если конечно я правильно понял, что требуется от меня
+*/
+ .z10 h1 {
+    background: #524419;
+    padding: 12px;
+    color: #fff;
+   }
+  .z10 p {
+    background: #cad8d0;
+    padding: 10px;
+   }
+
+
+
+
+.batarey{
+width: 150px;
+height: 50px;
+border: 2px solid #000;
+margin-bottom: 10px;
+position: relative;
+margin-left: 5px;
+}
+.batarey::before, .batarey::after {
+content: '';
+position: absolute;
+}  
+.batarey::before { 
+height: 100%; 
+}
+.batarey::after {
+width: 10px;
+height: 20px;
+background: #000;
+right: -10px; top: 15px;
+}
+.batarey_up::before {
+width: 33%;
+background: #ED1C24;
+}
+.batarey_middle::before {
+width: 66%;
+background: #FFC60B;
+}
+.batarey_down::before {
+width: 100%;
+background: #00A055;
+}
