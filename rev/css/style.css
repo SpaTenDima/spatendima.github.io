@@ -41,14 +41,11 @@ color: blue;
 .z9_li3{
 color: yellow;
 }
-	
 /*Для того чтоб избавиьтся от отступов я воспользовался 
-
 *{
 	margin: 0;
 	padding: 0;
 }
-
 Если конечно я правильно понял, что требуется от меня
 */
  .z10 h1 {
@@ -60,10 +57,6 @@ color: yellow;
     background: #cad8d0;
     padding: 10px;
    }
-
-
-
-
 .batarey{
 width: 150px;
 height: 50px;
@@ -96,4 +89,49 @@ background: #FFC60B;
 .batarey_down::before {
 width: 100%;
 background: #00A055;
+}
+.indicator{
+	height: 20px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	position: relative;
+	width: 100%;
+}
+.indicator::before{
+content: '';
+position: absolute;
+height: 18px; width: 20%;
+background: linear-gradient(to top, #5bc1fe 10%, #3F92C3 50%, #5bc1fe 90%);
+border: 1px solid #008DF2;
+box-shadow: 3px 0 3px rgba(0,0,0,0.5);
+border-radius: 10px 0 0 10px;
+}
+.z13{
+width: 100px; height: 100px;
+text-align: center;
+font: 40px/100px Times, serif;
+border: 24px solid #95CD8B;
+border-right: 24px solid #D0E6BB;
+border-radius: 100px;
+}
+.blok_up{
+width: 500px;
+height: 60px;
+background-color: green;
+display: block;
+vertical-align: middle;
+position: relative;
+}
+.blok_up p{
+padding: 4% 1% 5% 2%;
+}
+.blok_down{
+background-color: #D0E6BB;
+width: 700px;
+height: 200px;
+z-index: 1;
+padding: 10px;
+position: absolute;
+top: 700px;
+left: 35px;
 }
