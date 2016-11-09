@@ -1,0 +1,256 @@
+
+.z6{
+background-color: pink;
+}
+.z6 h1{
+color: blue;
+}
+.z6 h3{
+color: red;
+}
+.z6 a{
+color: green;
+}
+.z7{
+background-image: url(../img/1.png);
+width: 50px;
+height: 50px;
+box-shadow: inset 0 0 1em black;
+}
+.z9{
+background-color: black;
+height: auto;
+
+}
+.z9 li{
+display: inline-block;
+border-right: 1px solid white;
+padding: 5px;
+}
+.z9_li1{
+color: red;
+}
+.z9_li2{
+color: blue;
+}
+.z9_li3{
+color: yellow;
+}
+/*Для того чтоб избавиьтся от отступов я воспользовался 
+*{
+	margin: 0;
+	padding: 0;
+}
+Если конечно я правильно понял, что требуется от меня
+*/
+ .z10 h1 {
+    background: #524419;
+    padding: 12px;
+    color: #fff;
+   }
+  .z10 p {
+    background: #cad8d0;
+    padding: 10px;
+   }
+.batarey{
+width: 150px;
+height: 50px;
+border: 2px solid #000;
+margin-bottom: 10px;
+position: relative;
+margin-left: 5px;
+}
+.batarey::before, .batarey::after {
+content: '';
+position: absolute;
+}  
+.batarey::before { 
+height: 100%; 
+}
+.batarey::after {
+width: 10px;
+height: 20px;
+background: #000;
+right: -10px; top: 15px;
+}
+.batarey_up::before {
+width: 33%;
+background: #ED1C24;
+}
+.batarey_middle::before {
+width: 66%;
+background: #FFC60B;
+}
+.batarey_down::before {
+width: 100%;
+background: #00A055;
+}
+.indicator{
+	height: 20px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	position: relative;
+	width: 100%;
+}
+.indicator::before{
+content: '';
+position: absolute;
+height: 18px; width: 20%;
+background: linear-gradient(to top, #5bc1fe 10%, #3F92C3 50%, #5bc1fe 90%);
+border: 1px solid #008DF2;
+box-shadow: 3px 0 3px rgba(0,0,0,0.5);
+border-radius: 10px 0 0 10px;
+}
+.z13{
+width: 100px; height: 100px;
+text-align: center;
+font: 40px/100px Times, serif;
+border: 24px solid #95CD8B;
+border-right: 24px solid #D0E6BB;
+border-radius: 100px;
+}
+.blok_up{
+width: 500px;
+height: 60px;
+background-color: green;
+display: block;
+vertical-align: middle;
+position: relative;
+}
+.blok_up p{
+padding: 4% 1% 5% 2%;
+}
+.blok_down{
+background-color: #D0E6BB;
+width: 700px;
+height: 200px;
+z-index: 1;
+padding: 10px;
+position: absolute;
+top: 745px;
+left: 35px;
+}
+.z15{
+margin-top: 230px;
+width: 700px;
+height: 100px;
+margin-left: 20px;
+}
+.z15 ul li{
+	  width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #666;
+    -moz-box-shadow: 0 0 4px #666;
+    -webkit-box-shadow: 0 0 4px #666;
+    padding: 2px;
+    margin-right: 10px;
+    background: -moz-linear-gradient(#fff, #d3cdc6);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#d3cdc6));
+    background: linear-gradient(#fff, #d3cdc6);
+}
+
+
+
+
+
+
+
+
+
+.z16{
+  width: 700px;
+height: 300px;
+margin-left: 20px;
+}
+.z16 label{
+padding: 10px;
+    padding-left: 0;
+}
+.lable_block{
+      width: 100px;
+    display: inline-block;
+}
+.z16 ul li{
+  list-style: none;
+  padding: 10px 0px 10px 0px;
+}
+.z16 ul li input{
+}
+.img_z16{
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.img_z16_mandatory:before{
+      content: "\2715";
+      color: #FF0000;
+}
+.img_z16_check:before{
+   content: "\2714";
+   color: #008000;
+}
+.submit_z16{
+  padding: 5px;
+}
+#z17{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.z18.1 {
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	vertical-align: middle;
+    border: 1px solid #333; 
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none; 
+    color: #000;
+  }
+   .z18.1:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color: red;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
