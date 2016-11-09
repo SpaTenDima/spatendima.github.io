@@ -159,8 +159,11 @@ margin-left: 20px;
 
 
 
+
+
+
 .z16{
-	width: 700px;
+  width: 700px;
 height: 300px;
 margin-left: 20px;
 }
@@ -169,35 +172,35 @@ padding: 10px;
     padding-left: 0;
 }
 .lable_block{
-	    width: 100px;
+      width: 100px;
     display: inline-block;
 }
 .z16 ul li{
-	list-style: none;
-	padding: 10px 0px 10px 0px;
+  list-style: none;
+  padding: 10px 0px 10px 0px;
 }
 .z16 ul li input{
-
 }
 .img_z16{
-	width: 18px;
-	height: 18px;
-	vertical-align: middle;
-	text-align: center;
-	display: inline-block;
-	    background-repeat: no-repeat;
-	    background-size: cover;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
 }
-.img_z16_mandatory{
-	    background-image: url(../img/krest.png);   
+.img_z16_mandatory:before{
+      content: "\2715";
+      color: #FF0000;
 }
-.img_z16_check{
-	background-image: url(../img/chek.png);
+.img_z16_check:before{
+   content: "\2714";
+   color: #008000;
 }
 .submit_z16{
-	padding: 5px;
+  padding: 5px;
 }
-
 #z17{
     width: 350px;
     margin: 0 auto;
@@ -212,6 +215,28 @@ padding: 10px;
 
 
 
+
+
+
+
+
+
+.z18.1 {
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	vertical-align: middle;
+    border: 1px solid #333; 
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none; 
+    color: #000;
+  }
+   .z18.1:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+    color: red;
+   }
 
 
 
