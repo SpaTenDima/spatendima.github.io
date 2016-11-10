@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Задание по CSS</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <style type="text/css">
+
+#z16{
+  width: 700px;
+height: 300px;
+margin-left: 20px;
+display:block;
+}
+#z16 label{
+padding: 10px;
+    padding-left: 0;
+}
+.lable_block{
+      width: 100px;
+    display: inline-block;
+        padding: 10px;
+}
+#z16 ul{
+
+}
+#z16 ul li{
+     list-style: none;
+
+  padding: 10px 0px 10px 0px;
+}
+.img_z16{
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.img_z16_mandatory:before{
+      content: "\2715";
+      color: #FF0000;
+}
+.img_z16_check:before{
+   content: "\2714";
+   color: #008000;
+}
+.submit_z16{
+  padding: 5px;
+}
+
+
+  </style>
+<script src="http://code.jquery.com/jquery-1.12.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
+
+
+  <script>
+
+$(function () {
+ var validator = $("#z16").validate({
+        rules: {
+            login_email: {
+                required: true,
+                email: true
+            },
+            login_name: {
+                required: true
+            }
+
+        }
+    })
+var arrId = ["#login_name", "#login_email"];
+$.each(arrId, function(indx, id) {
+        var next = $(id).next();
+        var fn = function() {
+            validator.element(id) ? next.removeClass('img_z16_mandatory').addClass('img_z16_check') : next.removeClass('img_z16_check').addClass('img_z16_mandatory')
+        };
+        $(id).on("input", fn);
+
+    }
+);
+});
+  </script>
+</head>
+<body>
+<form id="z16" method="post">
+    <label>Пожалуйста, заполните обязательные поля.</label>
+  <br>
+  <ul>
+    <li>
+      <div class="lable_block"><label for="login_name">Имя:</label></div>
+      <input type="text" id="login_name" name="login_name" size="20" minlength="3" required
+                   data-msg-required="Введите Имя" data-msg-minlength="Имя должно иметь минимум 3 символа" aria-required="true" aria-invalid="true">
+      <div class="img_z16 img_z16_mandatory"></div>
+
+
+    </li>
+    <li>
+      <div class="lable_block"><label>Возраст:</label></div>
+      <input type="number" size="1"  min="1" max="99" value="1" style="width:35px;">
+      <div class="img_z16 img_z16_check"></div>
+    </li>
+    <li>
+      <div class="lable_block"><label for="login_email">E-mail:</label></div>
+       <input type="email" id="login_email" name="login_email" size="20" required
+                   data-msg-required="Вы забыли написать свой email"
+                   data-msg-email="Обязательно нужно написать @ и .!!!" aria-required="true" aria-invalid="true">
+      <div class="img_z16 img_z16_mandatory"></div>
+    </li>
+    <li>
+      <div class="lable_block"><label>Сайт:</label></div>
+      <input type="text" name="name" size="20">
+      <div class="img_z16 img_z16_check"></div>
+    </li>
+    <li>
+      <input class="submit_z16" type="submit" value="Отправить">
+    </li>
+  </ul>
+
+
+</form>
+
+</body>
+</html>
