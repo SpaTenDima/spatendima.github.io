@@ -649,3 +649,65 @@ li.file_name:hover a.main, li.correction_name:hover a.main {
     top: 10px; 
     left: 10px;
   } 
+
+  .z29{
+
+  }
+  .z29step_1{
+
+  }
+  .z29step_2{
+
+  }
+  .z29step_3{
+
+  }
+  .z29step_4{
+
+  }
+  .z29 label{
+
+  }
+  .z29 input{
+
+  }
+
+  .z29 label,.z29{
+    margin-left:0px;
+    position:relative;
+    display:inline-block;
+    height:30px;
+    width:90px;
+    background:linear-gradient(to bottom, #ccc 20%, #aaa 50%, #ccc 80%, #ccc 100%);
+    text-align:center;
+    line-height:30px;
+  }
+  .z29::after,.z29::before{
+    content:"";
+    position:absolute;
+    right:-23px;
+    top:0%;
+    display:block;
+    height:0px;
+    width:0px;
+    border:15px solid transparent;
+    border-left:8px solid #bbb;
+    z-index:3;
+  }
+  .z29 input{
+    display:none;
+  }
+  .z29 input:checked+.z29{
+    background:linear-gradient(to bottom, rgb(106,211,80) 20%, rgb(72,181,45) 50%, rgb(106,211,80) 80%);;
+    color:#fff; 
+  }
+  .z29 input:checked+.z29::after{
+   border-left-color:rgb(106,211,80);
+ }
+ .z29::before,.z29 label:last-child .z29::after{
+  border-left-color:white;
+  right:-27px;
+  z-index:2
+}
+
+
