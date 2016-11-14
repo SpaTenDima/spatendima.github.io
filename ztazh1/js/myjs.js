@@ -23,38 +23,3 @@ $.each(arrId, function(indx, id) {
 );
 });
 
-
-/*
-    $('#z16').validate(function () {
-        $.validate("#login_email", {
-            rules: {
-                login_email: {
-                    required: true,
-                },
-                email: {
-                    required: true,
-                    email: true,
-                },
-            },
-        });
-    });
-
-
-    $('#z16').validate(function () {
-        $.validate("#login_name", {
-            rules: {
-                login_name: {
-                    required: true,
-                },
-            },
-
-
-        });
-    });
-
-
-
-*/
-
-
-
