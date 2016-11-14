@@ -673,7 +673,7 @@ li.file_name:hover a.main, li.correction_name:hover a.main {
 	.z29 input{
 		display:none;
 	}
-	.top, .bottom{
+	.z29top, .z29bottom{
 		position:absolute;
 		top:0;
 		left:5px;
@@ -686,7 +686,7 @@ li.file_name:hover a.main, li.correction_name:hover a.main {
 		background:linear-gradient(#ccc 40%, #aaa 100%);
 		z-index:-1;
 	}
-	.bottom{
+	.z29bottom{
 		top:50%;
 		transform:skewX(-20deg);
 		-webkit-transform:skewX(-20deg);
