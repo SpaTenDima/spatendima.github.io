@@ -1,0 +1,21 @@
+﻿.headline{
+    margin: 0 auto;
+    font-size: 30px;
+    width: 478px;
+    margin-top: 10px;
+    color: #8b0000;
+}
+.task{
+margin-top: 10px;
+margin-bottom: 10px;
+color: #ff0000;
+font-size: 20px;
+}
+.panel{
+	margin: 20px;
+}
+.img140x140{
+	width: 140px; 
+	height: 140px;
+	background: #eee;
+}
