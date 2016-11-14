@@ -575,7 +575,7 @@ li.file_name:hover a.main, li.correction_name:hover a.main {
 	.storage{
 		position: fixed;
 		top: 300px;
-		width: 29%;
+		width: 29%!important;
 		height: 100px;
 		padding: 10px;
 		left: -372px;
