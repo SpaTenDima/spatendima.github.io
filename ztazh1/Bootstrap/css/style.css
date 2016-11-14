@@ -19,3 +19,8 @@ font-size: 20px;
 	height: 140px;
 	background: #eee;
 }
+.img300x200{
+width: 300px; 
+    height: 200px!important;
+	background: #eee;
+}
