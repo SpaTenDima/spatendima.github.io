@@ -309,10 +309,83 @@ span.caret {
 .carousel-control:hover {
     color: #ff9c00;
 }
+.carousel-control:focus {
+    color: #ff9c00;
+}
 .carousel-control.right {
     right: -63px;
     width: 7%;
 }
 #carousel-example-generic-1 ol{
 	display: none;
+}
+
+.modal-content{
+	border: 3px solid #ffb845;
+	        margin: 0 auto;
+	        width: 300px;
+}
+.modal-dialog {
+    margin: 150px auto;
+}
+.modal-header{
+border-bottom:none;
+    padding: 20px;
+}
+.modal-footer{
+	text-align: center; 
+	border-top:none;
+}
+.callback_form{
+margin-bottom: 15px;
+}
+.callback_form label{
+font-size: 16px;
+font-weight:400;
+margin-top: 5px; 
+color: #656565
+}
+.form-control-1{
+width: 90%;
+    display: inline-block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-controls{
+	display: inline-block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    margin-left: 45px;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.modal-body {
+    padding: 0 20px;
+}
+.modal-title_bold{
+	font-size: 18px;
+    font-weight: bold;
+    color: #000;
 }
