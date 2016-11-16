@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Алива</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
@@ -14,19 +14,22 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="indent-header">
+				<div class="indent-header clearfix ">
 					<div class="col-md-3">
 						<div class="logo">
 							<div class="logo_img">
-								<img src="img/logo.png" alt="Логотип">
+								<a href="#" class="logo">
+									<img src="img/logo.png" alt="Логотип" > 
+								</a>
 							</div>
 							<div class="logo_text">
 								<p>Агентство путешествий 	&laquo;Алива&raquo;</p>
 							</div>
+
 						</div>
 					</div>
 					<div class="col-md-5">
-						<div class="header_info">
+						<div class="information">
 							<p>Ранее бронирование туров -</p>
 							<p>это покупка качественного отдыха со скидкой!</p>
 						</div>
@@ -41,7 +44,7 @@
 							</div>
 							<div class="callback">
 								<div class="callback_img">
-									<img src="img/phone.png" alt="Телефон">
+								<p><a href="#myModal" data-toggle="modal"><img src="img/phone.png" alt="Телефон"></a></p>
 								</div>
 								<div class="callback_text">
 									<a data-toggle="modal" data-target="#myModal" class="callback_text_phone">Обратный звонок</a>
@@ -49,7 +52,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
@@ -71,7 +73,6 @@
 	</header>
 	<main>
 		<div class="container">
-			<div class="bs-example">
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
 						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -88,7 +89,8 @@
 												<div class="left_top_slider_block_text">
 													<p>ОАЭ</p>
 												</div>
-												<div id="reviewStars-input">
+											</div>
+											<div id="reviewStars-input">
 													<input id="star_4" type="radio" name="reviewStars"/>
 													<label title="5" for="star_4"></label>
 
@@ -104,19 +106,96 @@
 													<input id="star_0" type="radio" name="reviewStars"/>
 													<label title="1" for="star_0"></label>
 												</div>
-
-											</div>
 										</div>
 									</div>
 									<div class="col-md-6 padding_left">
 										<div class="right_top_slider">
 											<div class="right_top_slider_text">
-												<p>Страна изобилия и высочайшего уровня жизни.<br> Прекрасный климат, чистое и теплое море, обилие<br>экзотических развлечений стяжали Эмиратам славу<br> самого модного курорта на Аравийском полуострове.</p>
+
+												<p>
+													<span>Страна изобилия и высочайшего уровня жизни</span>
+													<span>Прекрасный климат, чистое и теплое море, обилие</span>
+													<span>экзотических развлечений стяжали Эмиратам славу</span>
+													<span> самого модного курорта на Аравийском полуострове.</span>
+												</p>
 
 												<p class="right_top_slider_text_bold">Вылет из Тюмени 02.05.13 на 9 ночей</p>
 
-												<p>В стоимость каждого тура входит:<br> проживание в отеле 4-5* , питание, прелет эконом-класса,<br> мед. страховка, трансфер.</p>
-												<p>Дополнительно оплачивается:<br>топливный сбор, виза.</p>
+												<p>
+													<span>В стоимость каждого тура входит:</span>
+													<span>проживание в отеле 4-5* , питание, прелет эконом-класса,</span>
+													<span>мед. страховка, трансфер.</span>
+												</p>
+												<p>
+													<span>ополнительно оплачивается:</span>
+													<span>топливный сбор, виза.
+												</p>
+												<p>Узнайте подробнее по телефону +7 (3452) 79-20-55</p>
+
+												<div class="price">
+													20 000 руб.
+													<span>на человека</span>
+												</div>
+
+												<div class="Book_button">
+													<button type="button" data-toggle="modal" data-target="#myModal1" class="right_top_slider_text_button">Забронировать тур</button>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="top_slider">
+								<div class="row">
+									<div class="col-md-6 padding_right">
+										<div class="left_top_slider">
+											<div class="left_top_slider_block">
+												<div class="left_top_slider_block_text">
+													<p>ОАЭ</p>
+												</div>
+											</div>
+											<div id="reviewStars-input">
+													<input id="star_4" type="radio" name="reviewStars"/>
+													<label title="5" for="star_4"></label>
+
+													<input id="star_3" type="radio" name="reviewStars"/>
+													<label title="4" for="star_3"></label>
+
+													<input id="star_2" type="radio" name="reviewStars"/>
+													<label title="3" for="star_2"></label>
+
+													<input id="star_1" type="radio" name="reviewStars"/>
+													<label title="2" for="star_1"></label>
+
+													<input id="star_0" type="radio" name="reviewStars"/>
+													<label title="1" for="star_0"></label>
+												</div>
+										</div>
+									</div>
+									<div class="col-md-6 padding_left">
+										<div class="right_top_slider">
+											<div class="right_top_slider_text">
+												<p>
+													<span>Страна изобилия и высочайшего уровня жизни</span>
+													<span>Прекрасный климат, чистое и теплое море, обилие</span>
+													<span>экзотических развлечений стяжали Эмиратам славу</span>
+													<span> самого модного курорта на Аравийском полуострове.</span>
+												</p>
+
+												<p class="right_top_slider_text_bold">Вылет из Тюмени 02.05.13 на 9 ночей</p>
+
+												<p>
+													<span>В стоимость каждого тура входит:</span>
+													<span>проживание в отеле 4-5* , питание, прелет эконом-класса,</span>
+													<span>мед. страховка, трансфер.</span>
+												</p>
+												<p>
+													<span>ополнительно оплачивается:</span>
+													<span>топливный сбор, виза.
+												</p>
 												<p>Узнайте подробнее по телефону +7 (3452) 79-20-55</p>
 												<div class="price">
 													20 000 руб.
@@ -142,7 +221,8 @@
 												<div class="left_top_slider_block_text">
 													<p>ОАЭ</p>
 												</div>
-												<div id="reviewStars-input">
+											</div>
+											<div id="reviewStars-input">
 													<input id="star_4" type="radio" name="reviewStars"/>
 													<label title="5" for="star_4"></label>
 
@@ -158,73 +238,29 @@
 													<input id="star_0" type="radio" name="reviewStars"/>
 													<label title="1" for="star_0"></label>
 												</div>
-
-											</div>
 										</div>
 									</div>
 									<div class="col-md-6 padding_left">
 										<div class="right_top_slider">
 											<div class="right_top_slider_text">
-												<p>Страна изобилия и высочайшего уровня жизни.<br> Прекрасный климат, чистое и теплое море, обилие<br>экзотических развлечений стяжали Эмиратам славу<br> самого модного курорта на Аравийском полуострове.</p>
+												<p>
+													<span>Страна изобилия и высочайшего уровня жизни</span>
+													<span>Прекрасный климат, чистое и теплое море, обилие</span>
+													<span>экзотических развлечений стяжали Эмиратам славу</span>
+													<span> самого модного курорта на Аравийском полуострове.</span>
+												</p>
 
 												<p class="right_top_slider_text_bold">Вылет из Тюмени 02.05.13 на 9 ночей</p>
 
-												<p>В стоимость каждого тура входит:<br> проживание в отеле 4-5* , питание, прелет эконом-класса,<br> мед. страховка, трансфер.</p>
-												<p>Дополнительно оплачивается:<br>топливный сбор, виза.</p>
-												<p>Узнайте подробнее по телефону +7 (3452) 79-20-55</p>
-												<div class="price">
-													20 000 руб.
-													<span>на человека</span>
-												</div>
-
-												<div class="Book_button">
-													<button type="button" data-toggle="modal" data-target="#myModal1" class="right_top_slider_text_button">Забронировать тур</button>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="top_slider">
-								<div class="row">
-									<div class="col-md-6 padding_right">
-										<div class="left_top_slider">
-											<div class="left_top_slider_block">
-												<div class="left_top_slider_block_text">
-													<p>ОАЭ</p>
-												</div>
-												<div id="reviewStars-input">
-													<input id="star_4" type="radio" name="reviewStars"/>
-													<label title="5" for="star_4"></label>
-
-													<input id="star_3" type="radio" name="reviewStars"/>
-													<label title="4" for="star_3"></label>
-
-													<input id="star_2" type="radio" name="reviewStars"/>
-													<label title="3" for="star_2"></label>
-
-													<input id="star_1" type="radio" name="reviewStars"/>
-													<label title="2" for="star_1"></label>
-
-													<input id="star_0" type="radio" name="reviewStars"/>
-													<label title="1" for="star_0"></label>
-												</div>
-
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 padding_left">
-										<div class="right_top_slider">
-											<div class="right_top_slider_text">
-												<p>Страна изобилия и высочайшего уровня жизни.<br> Прекрасный климат, чистое и теплое море, обилие<br>экзотических развлечений стяжали Эмиратам славу<br> самого модного курорта на Аравийском полуострове.</p>
-
-												<p class="right_top_slider_text_bold">Вылет из Тюмени 02.05.13 на 9 ночей</p>
-
-												<p>В стоимость каждого тура входит:<br> проживание в отеле 4-5* , питание, прелет эконом-класса,<br> мед. страховка, трансфер.</p>
-												<p>Дополнительно оплачивается:<br>топливный сбор, виза.</p>
+												<p>
+													<span>В стоимость каждого тура входит:</span>
+													<span>проживание в отеле 4-5* , питание, прелет эконом-класса,</span>
+													<span>мед. страховка, трансфер.</span>
+												</p>
+												<p>
+													<span>ополнительно оплачивается:</span>
+													<span>топливный сбор, виза.
+												</p>
 												<p>Узнайте подробнее по телефону +7 (3452) 79-20-55</p>
 												<div class="price">
 													20 000 руб.
@@ -249,9 +285,7 @@
 						<span class="glyphicon glyphicon-chevron-right"></span>
 					</a>
 				</div>
-			</div>
 
-			<div class="bs-example">
 				<div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
 						<li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
@@ -366,7 +400,7 @@
 						<span class="glyphicon glyphicon-chevron-right"></span>
 					</a>
 				</div>
-			</div>
+			
 		</div>
 	</main>
 	<footer>
@@ -414,22 +448,22 @@
 		</div>
 	</div>
 
-<div id="myModal1" class="modal fade">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h4 class="modal-title modal-title_bold">Бронирование тура</h4>
-			</div>
-			<div class="modal-body">
-				<div class="callback_form">
-					<input type="text" class="form-control" placeholder="Фамилия">
+	<div id="myModal1" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title modal-title_bold">Бронирование тура</h4>
 				</div>
-				<div class="callback_form">
-					<input type="text" class="form-control" placeholder="Имя">
-				</div>
-				<div class="callback_form">
-					<label class="control-label">Количество человек</label>
+				<div class="modal-body">
+					<div class="callback_form">
+						<input type="text" class="form-control" placeholder="Фамилия">
+					</div>
+					<div class="callback_form">
+						<input type="text" class="form-control" placeholder="Имя">
+					</div>
+					<div class="callback_form">
+						<label class="control-label">Количество человек</label>
 						<select class="form-controls">
 							<option value="t1">01</option>
 							<option value="t2">02</option>
@@ -442,26 +476,26 @@
 							<option value="t9">09</option>
 							<option value="t10">10</option>
 						</select>
+					</div>
+					<div class="callback_form">
+						<input type="email" class="form-control" placeholder="E-mail">
+					</div>
+					<div class="callback_form">
+						<label>+7</label>
+						<input type="tel" class="form-control-1" placeholder="Телефон">
+					</div>
 				</div>
-				<div class="callback_form">
-					<input type="email" class="form-control" placeholder="E-mail">
-				</div>
-				<div class="callback_form">
-					<label>+7</label>
-					<input type="tel" class="form-control-1" placeholder="Телефон">
-				</div>
-			</div>
 
-			<!-- Футер модального окна -->
-			<div class="modal-footer">
-				<button type="button" class="right_top_slider_text_button">Забронировать тур</button>
+				<!-- Футер модального окна -->
+				<div class="modal-footer">
+					<button type="button" class="right_top_slider_text_button">Забронировать тур</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/dropdown.js"></script>
-<script src="js/modal.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/modal.js"></script>
 </body>
 </html>
